@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    color: var(#{--text-color-default});
+    background: var(#{--body-background-default});
+    height: 100vh;
+    padding-bottom: 40px;
+    transition: all 0.3s;
+}
+a {
+    text-decoration: none;
+}

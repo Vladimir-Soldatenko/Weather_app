@@ -1,0 +1,100 @@
+@import "./Vars.scss";
+@import "./Media.scss";
+
+.today__weather {
+    margin-bottom: 50px;
+    .wrapper {
+        max-width: 1238px;
+        padding: 0 19px;
+        margin: 0 auto;
+    }
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__block {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: var(#{--components-background-default});
+        box-shadow: var(#{--card-shadow-default});
+        border-radius: 20px;
+        transition: all 0.3s;
+    }
+    .city__weather {
+        position: relative;
+        width: 350px;
+        margin-right: 57px;
+        flex-shrink: 0;
+        padding: 20px 60px 20px 20px;
+        &__temperature {
+            font-weight: 500;
+            font-size: 96px;
+            line-height: 117px;
+            color: #4793ff;
+        }
+        &__today {
+            font-size: 40px;
+            line-height: 49px;
+            margin-bottom: 31px;
+        }
+        &__icon {
+            position: absolute;
+            width: 119px;
+            height: auto;
+            right: 20px;
+            top: 46px;
+        }
+        &__time {
+            margin-bottom: 14px;
+        }
+    }
+    .weather__info {
+        position: relative;
+        flex-basis: 66%;
+        padding: 31px 41px;
+        &__background {
+            position: absolute;
+            width: 70%;
+            top: 0;
+            right: 0;
+            opacity: 0.75;
+            border-radius: 20px;
+        }
+        &__container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            &:last-of-type {
+                margin: 0;
+            }
+        }
+        &__container__img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #ffffff;
+            border-radius: 50%;
+            margin-right: 20px;
+            width: 38px;
+            height: 38px;
+            box-shadow: var(#{--card-shadow-default});
+            transition: all 0.3s;
+        }
+        &__title {
+            color: $base-color;
+            margin-right: 20px;
+        }
+    }
+}
+.grey-color {
+    font-size: 25px;
+    line-height: 30px;
+    color: $base-color;
+}
+
+// -----------------loader-------------------
+[data-testid] {
+    justify-content: center;
+    align-items: center;
+}

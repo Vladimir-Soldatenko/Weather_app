@@ -1,0 +1,11 @@
+@import "./Vars.scss";
+
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $base-color;
+}
+.error > h1 {
+    margin-bottom: 15px;
+}
